@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great app to help students</title>
+    <link rel="icon" href="C:\Users\Abhay Sirsikar\Downloads\idea.png" type="image/X">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+            width: 100%;
+        }
+        header{
+            background-color: rgb(14, 1, 43);
+            padding-left: 30px;
+            margin: 0px;
+            padding: 10px;
+            scroll-behavior: smooth;
+            color: white;
+            font-size: 20px;
+            position: relative;
+            padding-top: 0.5px;
+            width: 100%;
+        }
+        .search{
+            float: right;
+            padding-top: 0px;
+            margin-top: 31px;
+        }
+        .search input{
+            padding: 2px 2px;
+            float: right;
+            font-size: 20px;
+            border-color: rgb(248, 248, 252);
+
+        }
+        .search span{
+            float: right;
+            padding-top: 0px;
+            margin-top: 1px;
+            background-color: rgb(1, 7, 7);
+            size: 20px;
+            cursor: pointer;
+        }
+        nav{
+            float:left;
+            background-color: rgb(6, 78, 123);
+            margin: 0px;
+            height: 250px;
+            width: 20%;
+            box-sizing: border-box;
+
+        }
+        .menu a{
+            -webkit-text-fill-color: rgb(0, 9, 12);
+            font-size: 5px 5px;
+            margin-top: 7px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            word-spacing: normal;
+            letter-spacing: 1px;
+            display: block;
+            background-color: azure;
+            width: 100%;
+            text-decoration: none;
+            padding: 4px;
+            border-radius: 8px;
+        }
+        .menu a:hover{
+            background-color: rgb(165, 205, 229);
+            font-size:x-large;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .main{
+            width: 60%;
+            margin: 0px;
+            float: left;
+            padding: 8px 20px;
+        }
+        .main h2{
+            float: left;
+            width: 100%;
+            margin-bottom: 0.5px;
+            padding: 10px 10px;
+            font-size: 40px;
+        }
+        main .image img{
+            background-color: aliceblue;
+            box-sizing: border-box;
+            border-color: antiquewhite;
+            height: 400px;
+            width: 740px;
+            display: flex;
+            width: 100%;
+        }
+        .right{
+            font-size: 30px;
+            background-color: #fcf8f8;
+            border-style: dashed;
+            float: left;
+            width: 20%;
+            margin-top: 2px;
+            text-align: center;
+            border-spacing: 2px;
+            
+        }
+        .right p{
+            margin-top: 0px;
+            background-color: #fffff9;
+            padding-top: 10px;
+            padding-left: 90%;
+            float: left;
+            color: grey;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            font-size: 17px;
+            
+        }
+        .right a:hover{
+            border: 9px;
+            border-bottom: 2.5px solid rgb(12, 2, 122);
+        }
+        .share{
+            width: 100%;
+            height: max-content 30px;
+        }
+        .box{
+            width:auto;
+            box-sizing: border-box;
+            height: auto;
+            
+        }
+        .box #box1{
+            height: 8cm;
+            width: 100%;
+            margin: 0px;
+            border: 2px solid black;
+            margin-top: 1350px;
+            margin-left: 0px;
+            margin-right: 0px;
+            overflow: scroll;
+            padding-right: 80px;
+        }
+        #box1:hover{
+            box-shadow: 10px 10px 10px rgb(2, 169, 13);
+        }
+        .box #box2{
+            height: 8cm;
+            width: 100%;
+            margin: 0px;
+            border: 2px solid black;
+            margin-left: 0px;
+            margin-top: 30px;
+            overflow: scroll;
+        }
+        #box2:hover{
+            box-shadow: 10px 10px 10px rgb(1, 197, 34);
+        }
+        footer{
+            height:90px;
+            width: 100%;
+            display: flexbox;
+        }
+        .last{
+            background-color: rgb(72, 74, 112);
+            box-sizing: content-box;
+            width: 100%;
+            padding-bottom: 350px;
+            margin-top: 80px;
+            display: flex;
+        }
+        #www{
+            padding-top: 100px;
+            padding-left: 30px;
+            font-size: 25px;
+        }
+        .last #www{
+            width: 40%;
+        }
+        .last #www a:hover{
+            text-shadow: 3px 3px 2px rgb(1, 9, 68);
+        }
+        .box a:hover{
+            text-shadow: 2px 1px rgb(26, 1, 57);
+        }
+        .last p{
+            padding-top: 50px;
+            float: right;
+            text-align: right;
+        }
+        @media only screen and (max-width: 600px){
+            /* for mobile */
+            .search, .main, .menu, .image, .right, .share, .last{
+                width: 100%;
+            }
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+
+<!-- header section -->
+    <header>
+        <h1><img src="idea.png" style="height: 70px; width: 70px;"><i>Grow Up</i>
+        <div class="search">
+            <input type="search" name="seach" id="search" placeholder="search here">
+            <img src="icons8-search-client-80 (1).png" style="height: 32px; width: 32px; padding-bottom: 30px;">
+        </div>
+        </h1>
+    </header>
+
+<!-- menu section -->
+    <section>
+        <nav class="menu">
+            <ul>
+                <a href="#" style="color: rgb(13, 1, 1);" target="_blank">HOME</a>
+                <a href="#" style="color: rgb(16, 2, 2);" target="_blank">ABOUT</a>
+                <a href="#" style="color: rgb(18, 2, 2);" target="_blank">SERVICE</a>
+                <a href="#" style="color: rgb(9, 1, 1);" target="_blank">FEEDBACK</a>
+                <a href="#" style="color: rgb(8, 1, 1);" target="_blank">CONTACT US</a>
+            </ul>
+        </nav>
+    </section>
+    
+
+<!-- content section -->
+
+        <!-- middle part -->
+        <main class="main">
+        <h2><span style="size: 220px; color: black; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"><b>Great apps to help students with focus and motivation</b></span></h2>
+        <br>
+
+        <!-- image -->
+        <div class="image">
+            <img src="C:\Users\Abhay Sirsikar\Desktop\.vscode\wp6505150-desktop-motivational-wallpapers.jpg"> 
+        </div>
+
+        <!-- writing part -->
+        <p style="font-size: 20px;">
+         <span><b>1. Break work into chunks</b></span><br>
+            <i>Clockwork Tomatio logo from app storeApp: Clockwork Tomato 
+               A timer and activity logger which aims to boost productivity by breaking down work periods into 25-minute slices, separated by short breaks. The idea is to move away from your desk and do something completely different, perhaps fun, active or relaxing. After four Pomodoros, you get a longer break of 15-25 minutes but you can set work slots and breaks times in whatever way you want.</i><br>
+            <img src="Screen Shot 2017-09-13 at 10.04.40.png" style="height: 110px; width: 110px; padding: 0px; margin: 0px; float: right;">
+            <br>
+        </p>
+        <p style="font-size: 20px;">
+            <span><b>2. The morning motivation alarm</b></span><br> 
+            <i>Billed as the app that will make your roommates hate you, Alarmy can be set up to not switch off until you take a photo of something specific - ie the front of your house - which ideally encourages you away from the duvet and into study mode.</i>
+            <br>
+        </p>
+        <p style="font-size: 20px;">
+            <span><b>3. Work hard, get a kitten</b></span><br>
+            <i>We bet the makers of this app have a few dollars in the kitty, after creating this genuis idea. Struggling to write that essay or novel? How about a cute kitten picture reward every time you write 100 words? Written? Kitten! offers just that.</i> 
+            <br>
+        </p>
+        <p style="font-size: 20px;">
+            <span><b>4. Block distractions</b></span><br>
+            <i>So obsessed we are with distracting ourselves with random web browsing that there are, of course, countless apps which now allow you to block websites that you find divert your work. You can look forward to receiving a joyful message of encouragement when you try to click on one of your banned sites. To feel super smug, you can tally up the time you would have wasted over the course of a day/ week/ month.You can create various blocked website lists for different times / occasions/ situations or a white list just allowing yourself access to specific sites, such as your university research pages (not Bake Off). You can also completely freeze yourself out of your computer to ensure you take some time out.</i><br>
+            <img src="C:\Users\Abhay Sirsikar\Desktop\.vscode\Screen Shot 2017-09-13 at 10.06.05.png" style="height: 110px; width: 110px; float: right;"> 
+        </p>
+
+        </main>
+
+
+<!-- right section -->
+
+    <div class="right" style="color: grey;">
+        <h3><span style="text-align: center;">Related Content</span></h3>
+        <p><a href="https://abilitynet.org.uk/news-blogs/great-apps-help-students-focus-and-motivation" style="color: grey; text-align: center;">Top three ambient apps to improve focus and help you study</a></p>
+        <p><a href="https://abilitynet.org.uk/news-blogs/401" style="color: grey; text-align: center;">Three positive habit forming apps</a></p>
+        <p><a href="https://abilitynet.org.uk/news-blogs/259" style="color: grey; text-align: center;">News and blogs by author</a></p>
+        <p><a href="https://abilitynet.org.uk/news-blogs/great-apps-help-students-focus-and-motivation#" style="color: grey; text-align: center;">View all News and Blogs</a></p>
+    </div>
+
+
+<!-- share portion -->
+    <footer class="share" style="padding: 90px;">
+        <table>
+            <td><span style="font-size: 20px;">Share:</span></td>
+            <td><a href="#"><img src="icons8-facebook-96.png" style="height: 60px; width: 60px; float: left;"></a></td>
+            <td><a href="#"><img src="icons8-instagram-96.png" style="height: 60px; width: 60px; float: left;"></a></td>
+            <td><a href="#"><img src="icons8-whatsapp-96.png" style="height: 60px; width: 60px; float: left;"></a></td>
+            <td><a href="#"><img src="icons8-twitter-96.png" style="height: 60px; width: 60px; float: left;"></a></td>
+        </table>
+    </footer>
+
+<!-- box portion -->
+<section class="box">
+    <div id="box1">
+        <p>
+            <ul style="font-size: 42px; text-align: center;">
+                <img src="keep-in-touch.png" style="size:40px; text-align: center;"><br>
+                <tr>Keep in touch</tr><br>
+                <tr><a href="https://abilitynet.org.uk/sign-up-for-our-newsletter" style="font-size: 23px; color: rgb(92, 92, 92); text-decoration: none;">Sign up for our email news</a></tr></ul>
+        </p>
+    </div>
+    <div class="box" id="box2">
+        <p>
+            <ul style="font-size: 42px; text-align: center;">
+                <img src="Jobs.png" style="text-align: center; "><br>
+                <tr>Current Job</tr><br>
+                <tr><a href="https://abilitynet.org.uk/jobs" style="font-size: 23px; color: rgb(92, 92, 92); text-decoration: none;">see our lastest vacancies</a></tr></ul>
+        </p>
+        </div>
+</section>
+
+
+
+
+
+<!-- last portion -->
+    <footer class="last">
+        <h3 id="www">
+            <img src="C:\Users\Abhay Sirsikar\Downloads\idea.png" style="height: 230px; width: 250px; text-decoration: none;">
+            <a href="#" style="text-decoration: none; color: rgb(255, 251, 251);"><i>www.Grow Up.com</i></a>
+        </h3>
+        
+        <div style="color: white;">
+            <p>©AbilityNet 2023. AbilityNet is a company limited by guarantee in England and Wales No: 3469653. AbilityNet is a Charity, registered in England and Wales, registration number 1067673, and in Scotland registration number SC039866. Registered Office: Acre House, 11/15 William Road, London NW1 3ER. VAT No. 380597914.</p>  
+        </div>
+
+
+
+    </footer>
+    
+</body>
+</html>
